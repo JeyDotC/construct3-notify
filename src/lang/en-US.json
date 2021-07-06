@@ -1,0 +1,101 @@
+﻿{
+	"languageTag": "en-US",
+	"fileDescription": "Strings for Notify.",
+	"text": {
+		"behaviors": {
+			"jeydotc_notify": {
+				"name": "Notify",
+				"description": "Notify to matching instances that something happened.",
+				"help-url": "https://github.com/JeyDotC/construct3-notify",
+				"properties": {
+				},
+				"aceCategories": {
+				},
+				"conditions": {
+					"on-notified": {
+						"list-name": "On Notified",
+						"display-text": "On {my} [i]{0}[/i]",
+						"description": "Happens when this instance is notified of the specified event.",
+						"params": {
+							"event": {
+								"name": "Event",
+								"desc": "The name of the notified event, can be any string."
+							}
+						}
+					},
+					"on-instance-variable-changed": {
+						"list-name": "On Variable Changed",
+						"display-text": "On {my} [b]{0}[/b] Changed",
+						"description": "Triggered when the given instance variable gets changed, this only happens if you previously started to observe the variable with the 'Observe' action.",
+						"params": {
+							"variable": {
+								"name": "Instance Variable",
+								"desc": "The instance variable being observed."
+							}
+						}
+					}
+				},
+				"actions": {
+					"notify": {
+						"list-name": "Notify",
+						"display-text": "{my} [i]{0}[/i]",
+						"description": "Notifies of the occurrence of the given event.",
+						"params": {
+							"event": {
+								"name": "Event",
+								"desc": "The name of the event to be notified, can be any string."
+							}
+						}
+					},
+					"debounce-for": {
+						"list-name": "Ignore notifications for X Seconds",
+						"display-text": "{my} ignore [i]{0}[/i] for [i]{1}[/i] seconds",
+						"description": "Ignore all notifications of a given event for a given amount of time.",
+						"params": {
+							"event": {
+								"name": "Event",
+								"desc": "The name of the event to be ignored, can be any string."
+							},
+							"seconds": {
+								"name": "Seconds",
+								"desc": "The time in seconds the event will be ignored."
+							}
+						}
+					},
+					"observe": {
+						"list-name": "Observe",
+						"display-text": "{my} Observing [b]{0}[/b] every [i]{1}[/i] seconds, Ignore Deferred: [i]{2}[/i]",
+						"description": "Observes the given instance variable.",
+						"params": {
+							"variable": {
+								"name": "Instance Variable",
+								"desc": "The instance variable to observe."
+							},
+							"frequency": {
+								"name": "Frequency In Seconds",
+								"desc": "How often should we check for changes, default 0 for every tick."
+							},
+							"ignore-deferred": {
+								"name": "Ignore Deferred Changes",
+								"desc": "Ignore any change that happens before the next notification cycle."
+							}
+						}
+					},
+					"stop-observing": {
+						"list-name": "Stop Observing",
+						"display-text": "{my} Stopped Observing [b]{0}[/b].",
+						"description": "Stops observing the given instance variable.",
+						"params": {
+							"variable": {
+								"name": "Instance Variable",
+								"desc": "The instance variable to stop observing."
+							}
+						}
+					}
+				},
+				"expressions": {
+				}
+			}
+		}
+	}
+}

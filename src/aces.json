@@ -1,0 +1,64 @@
+﻿{
+	"": {
+		"conditions": [
+			{
+				"id": "on-notified",
+				"scriptName": "OnNotified",
+				"isTrigger": true,
+				"highlight": true,
+				"params": [
+					{ "id": "event", "type": "string" }
+				]
+			},
+			{
+				"id": "on-instance-variable-changed",
+				"scriptName": "OnInstanceVariableChanged",
+				"isTrigger": true,
+				"highlight": true,
+				"params": [
+					{ "id": "variable", "type": "instancevar" }
+				]
+			}
+		],
+		"actions": [
+			{
+				"id": "notify",
+				"scriptName": "Notify",
+				"highlight": true,
+				"params": [
+					{ "id": "event", "type": "string" }
+				]
+			},
+			{
+				"id": "debounce-for",
+				"scriptName": "DebounceFor",
+				"highlight": false,
+				"params": [
+					{ "id": "event", "type": "string" },
+					{ "id": "seconds", "type": "number" }
+				]
+			},
+			{
+				"id": "observe",
+				"scriptName": "Observe",
+				"highlight": true,
+				"params": [
+					{ "id": "variable", "type": "instancevar" },
+					{ "id": "frequency", "type": "number" },
+					{ "id": "ignore-deferred", "type": "boolean" }
+				]
+			},
+			{
+				"id": "stop-observing",
+				"scriptName": "StopObserving",
+				"highlight": false,
+				"params": [
+					{ "id": "variable", "type": "instancevar" }
+				]
+			}
+		],
+		"expressions": [
+			
+		]
+	}
+}
