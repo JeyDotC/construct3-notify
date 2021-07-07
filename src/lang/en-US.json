@@ -6,7 +6,7 @@
 			"jeydotc_notify": {
 				"name": "Notify",
 				"description": "Notify to matching instances that something happened.",
-				"help-url": "https://github.com/JeyDotC/construct3-notify",
+				"help-url": "https://www.construct.net/en/make-games/addons/574/notify",
 				"properties": {
 				},
 				"aceCategories": {

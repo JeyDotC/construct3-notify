@@ -5,8 +5,8 @@
 	"id": "JeyDotC_Notify",
 	"version": "1.0.0.0",
 	"author": "Jeysson (JeyDotC) Guevara",
-	"website": "https://www.construct.net",
-	"documentation": "https://www.construct.net",
+	"website": "https://www.construct.net/en/make-games/addons/574/notify",
+	"documentation": "https://www.construct.net/en/make-games/addons/574/notify",
 	"description": "Notify to matching instances that something happened.",
 	"editor-scripts": [
 						"behavior.js",
