@@ -82,6 +82,17 @@
 			this.Trigger(C3.Behaviors.JeyDotC_Notify.Cnds.OnInstanceVariableChanged);
 		}
 
+		PostTick(){
+			this._watchedVariables = Object.entries(this._watchedVariables).map(([instanceVar, watch]) => {
+				return [instanceVar, {
+					...watch, 
+					deferrredChangeDetected: false,
+					notified: false
+				}];
+			}).reduce((total, [instanceVar, watch]) => ({...total, [instanceVar]: watch}), {});
+
+		}
+
 		GetScriptInterfaceClass()
 		{
 			return self.INotifyInstance;

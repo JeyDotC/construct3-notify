@@ -33,6 +33,17 @@
 								"desc": "The instance variable being observed."
 							}
 						}
+					},
+					"on-boolean-instance-variable-changed": {
+						"list-name": "On Boolean Variable Changed",
+						"display-text": "On {my} [b]{0}[/b] Changed",
+						"description": "Triggered when the given boolean instance variable gets changed, this only happens if you previously started to observe the variable with the 'Observe' action.",
+						"params": {
+							"variable": {
+								"name": "Instance Variable",
+								"desc": "The instance variable being observed."
+							}
+						}
 					}
 				},
 				"actions": {
@@ -70,6 +81,25 @@
 							"variable": {
 								"name": "Instance Variable",
 								"desc": "The instance variable to observe."
+							},
+							"frequency": {
+								"name": "Frequency In Seconds",
+								"desc": "How often should we check for changes, default 0 for every tick."
+							},
+							"ignore-deferred": {
+								"name": "Ignore Deferred Changes",
+								"desc": "Ignore any change that happens before the next notification cycle."
+							}
+						}
+					},
+					"observe-boolean": {
+						"list-name": "Observe Boolean",
+						"display-text": "{my} Observing [b]{0}[/b] every [i]{1}[/i] seconds, Ignore Deferred: [i]{2}[/i]",
+						"description": "Observes the given boolean instance variable.",
+						"params": {
+							"variable": {
+								"name": "Instance Variable",
+								"desc": "The boolean instance variable to observe."
 							},
 							"frequency": {
 								"name": "Frequency In Seconds",

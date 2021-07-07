@@ -18,6 +18,15 @@
 				"params": [
 					{ "id": "variable", "type": "instancevar" }
 				]
+			},
+			{
+				"id": "on-boolean-instance-variable-changed",
+				"scriptName": "OnInstanceVariableChanged",
+				"isTrigger": true,
+				"highlight": true,
+				"params": [
+					{ "id": "variable", "type": "instancevarbool" }
+				]
 			}
 		],
 		"actions": [
@@ -44,6 +53,16 @@
 				"highlight": true,
 				"params": [
 					{ "id": "variable", "type": "instancevar" },
+					{ "id": "frequency", "type": "number" },
+					{ "id": "ignore-deferred", "type": "boolean" }
+				]
+			},
+			{
+				"id": "observe-boolean",
+				"scriptName": "Observe",
+				"highlight": true,
+				"params": [
+					{ "id": "variable", "type": "instancevarbool" },
 					{ "id": "frequency", "type": "number" },
 					{ "id": "ignore-deferred", "type": "boolean" }
 				]
