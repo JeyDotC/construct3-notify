@@ -58,6 +58,21 @@
 							}
 						}
 					},
+					"deferred-notify": {
+						"list-name": "Notify after X seconds",
+						"display-text": "{my} [i]{0}[/i] after [b]{1}[/b] seconds",
+						"description": "Notifies of the occurrence of the given event after the given amount of time.",
+						"params": {
+							"event": {
+								"name": "Event",
+								"desc": "The name of the event to be notified, can be any string."
+							},
+							"notify-after": {
+								"name": "Notify after",
+								"desc": "The time, in seconds, to delay the notification."
+							}
+						}
+					},
 					"debounce-for": {
 						"list-name": "Ignore notifications for X Seconds",
 						"display-text": "{my} ignore [i]{0}[/i] for [i]{1}[/i] seconds",
