@@ -39,6 +39,15 @@
 				]
 			},
 			{
+				"id": "deferred-notify",
+				"scriptName": "Notify",
+				"highlight": true,
+				"params": [
+					{ "id": "event", "type": "string" },
+					{ "id": "notify-after", "type": "number" }
+				]
+			},
+			{
 				"id": "debounce-for",
 				"scriptName": "DebounceFor",
 				"highlight": false,
