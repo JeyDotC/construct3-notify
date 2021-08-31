@@ -14,7 +14,7 @@
 	const BEHAVIOR_ID = "JeyDotC_Notify";
 	////////////////////////////////////////////
 	
-	const BEHAVIOR_VERSION = "1.0.1.0";
+	const BEHAVIOR_VERSION = "1.1.0.0";
 	const BEHAVIOR_CATEGORY = "general";
 	
 	const BEHAVIOR_CLASS = SDK.Behaviors.JeyDotC_Notify = class Notify extends SDK.IBehaviorBase
